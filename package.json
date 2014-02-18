@@ -1,0 +1,35 @@
+{
+  "name": "css-prettifier",
+  "description": "CSS prettifier in your style.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/hideki-a/css-prettifier",
+  "author": {
+    "name": "Hideki Abe",
+    "email": "hideki.abe@anothersky.pw",
+    "url": "http://www.anothersky.pw/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hideki-a/css-prettifier.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hideki-a/css-prettifier/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/hideki-a/css-prettifier/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "main": "lib/css-prettifier",
+  "scripts": {},
+  "keywords": [
+    "css"
+  ],
+  "dependencies": {
+    "postcss": "~0.3.0"
+  }
+}
