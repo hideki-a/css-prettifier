@@ -25,11 +25,16 @@
     "node": ">= 0.8.0"
   },
   "main": "lib/css-prettifier",
-  "scripts": {},
+  "scripts": {
+    "test": "nodeunit test"
+  },
   "keywords": [
     "css"
   ],
   "dependencies": {
     "postcss": "~0.3.0"
+  },
+  "devDependencies": {
+    "nodeunit": "~0.8.5"
   }
 }

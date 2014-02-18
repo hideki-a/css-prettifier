@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/*
+ * css-prettifierテスト用CSS
+ * Ver.1.0
+ */
+
+p,
+ul{
+margin-bottom:1em;
+}
+
+.lyt-column .unit{
+float:left;
+margin-right:20px;
+}
+
+.lyt-column .unit.last-unit{
+margin-right:0;
+}
+
+.box-01{
+box-sizing:border-box;
+padding:10px;
+width:300px;
+}
+
+.hdg-l1-01{
+margin-bottom:2em;
+font-size:2em;
+}
+
+.lyt-column:before,
+.lyt-image:before,
+.lyt-column:after,
+.lyt-image:after{
+content:" ";
+display:table;
+}
+
+.lyt-column:after,
+.lyt-image:after{
+clear:both;
+}
+
+@media print{
+
+nav,
+.list-link-01{
+display:none;
+}
+
+body{
+background-color:#fff;
+}
+
+}
