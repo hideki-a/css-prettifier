@@ -1,7 +1,7 @@
 {
   "name": "css-prettifier",
   "description": "CSS prettifier in your style.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/hideki-a/css-prettifier",
   "author": {
     "name": "Hideki Abe",
