@@ -12,7 +12,7 @@ exports.cssprettifier = {
     var processor = cssprettifier(options);
     var css = fs.readFileSync(path.join(__dirname, 'fixtures/basic.css'));
     var expected = fs.readFileSync(path.join(__dirname, 'expected/through.css'));
-    var actual = processor.process(css).css.trim();
+    var actual = processor.process(css).css;
 
     test.equal(actual, expected, 'File outputted without change.');
     test.done();
@@ -41,7 +41,7 @@ exports.cssprettifier = {
     var processor = cssprettifier(options);
     var css = fs.readFileSync(path.join(__dirname, 'fixtures/basic.css'));
     var expected = fs.readFileSync(path.join(__dirname, 'expected/basic.css'));
-    var actual = processor.process(css).css.trim();
+    var actual = processor.process(css).css;
 
     test.equal(actual, expected, 'File outputted with formatted by setting rules.');
     test.done();
@@ -56,7 +56,7 @@ exports.cssprettifier = {
     var processor = cssprettifier(options);
     var css = fs.readFileSync(path.join(__dirname, 'fixtures/basic.css'));
     var expected = fs.readFileSync(path.join(__dirname, 'expected/separeteline.css'));
-    var actual = processor.process(css).css.trim();
+    var actual = processor.process(css).css;
 
     test.equal(actual, expected, 'A new line for two or more selectors is started.');
     test.done();
@@ -74,7 +74,7 @@ exports.cssprettifier = {
     var processor = cssprettifier(optionsSeparete);
     var css = fs.readFileSync(path.join(__dirname, 'fixtures/basic.css'));
     var expected = fs.readFileSync(path.join(__dirname, 'expected/atrule_indent1.css'));
-    var actual = processor.process(css).css.trim();
+    var actual = processor.process(css).css;
 
     test.equal(actual, expected, 'Formatted by 4space indent(spareteline).');
 
@@ -87,7 +87,7 @@ exports.cssprettifier = {
     };
     processor = cssprettifier(optionsSameline);
     expected = fs.readFileSync(path.join(__dirname, 'expected/atrule_indent2.css'));
-    actual = processor.process(css).css.trim();
+    actual = processor.process(css).css;
 
     test.equal(actual, expected, 'Formatted by 4space indent(sameline).');
 
@@ -106,7 +106,7 @@ exports.cssprettifier = {
     var processor = cssprettifier(optionsSeparete);
     var css = fs.readFileSync(path.join(__dirname, 'fixtures/tab.css'));
     var expected = fs.readFileSync(path.join(__dirname, 'expected/atrule_indent1_tab.css'));
-    var actual = processor.process(css).css.trim();
+    var actual = processor.process(css).css;
 
     test.equal(actual, expected, 'Formatted by tab indent(sameline).');
 
@@ -119,7 +119,7 @@ exports.cssprettifier = {
     };
     processor = cssprettifier(optionsSameline);
     expected = fs.readFileSync(path.join(__dirname, 'expected/atrule_indent2_tab.css'));
-    actual = processor.process(css).css.trim();
+    actual = processor.process(css).css;
 
     test.equal(actual, expected, 'Formatted by tab indent(sameline).');
 
