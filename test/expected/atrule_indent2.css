@@ -3,8 +3,7 @@
  * css-prettifierテスト用CSS
  * Ver.1.0
  */
-p,
-ul {
+p, ul {
   margin-bottom: 1em;
 }
 
@@ -36,11 +35,11 @@ ul {
 }
 
 @media print {
-  nav, .list-link-01 {
-    display: none;
-  }
+    nav, .list-link-01 {
+        display: none;
+    }
 
-  body {
-    background-color: #fff;
-  }
+    body {
+        background-color: #fff;
+    }
 }

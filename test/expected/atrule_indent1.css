@@ -27,20 +27,25 @@ ul {
   font-size: 2em;
 }
 
-.lyt-column:before, .lyt-image:before, .lyt-column:after, .lyt-image:after {
+.lyt-column:before,
+.lyt-image:before,
+.lyt-column:after,
+.lyt-image:after {
   content: " ";
   display: table;
 }
-.lyt-column:after, .lyt-image:after {
+.lyt-column:after,
+.lyt-image:after {
   clear: both;
 }
 
 @media print {
-  nav, .list-link-01 {
-    display: none;
-  }
+    nav,
+    .list-link-01 {
+        display: none;
+    }
 
-  body {
-    background-color: #fff;
-  }
+    body {
+        background-color: #fff;
+    }
 }
