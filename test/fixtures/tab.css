@@ -9,7 +9,7 @@ ul {
 }
 
 @media print {
-	nav, .list-link-01 {
+	nav,footer, .list-link-01 {
 		display: none;
 	}
 

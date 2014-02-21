@@ -27,7 +27,7 @@ ul {
   font-size: 2em;
 }
 
-.lyt-column:before, .lyt-image:before, .lyt-column:after, .lyt-image:after {
+.lyt-column:before,.lyt-image:before, .lyt-column:after, .lyt-image:after {
   content: " ";
   display: table;
 }
@@ -36,7 +36,7 @@ ul {
 }
 
 @media print {
-  nav, .list-link-01 {
+  nav,footer, .list-link-01 {
     display: none;
   }
 

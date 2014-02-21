@@ -45,6 +45,7 @@ clear:both;
 @media print{
 
 nav,
+footer,
 .list-link-01{
 display:none;
 }
